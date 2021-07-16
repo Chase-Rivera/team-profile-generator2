@@ -1,0 +1,23 @@
+{
+  "name": "team-profile-generator2",
+  "version": "1.0.0",
+  "description": "A command line app that asks the user questions and returns them a brief summary of their created team's information.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chase-Rivera/team-profile-generator2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chase-Rivera/team-profile-generator2/issues"
+  },
+  "homepage": "https://github.com/Chase-Rivera/team-profile-generator2#readme",
+  "dependencies": {
+    "inquirer": "^8.1.2"
+  }
+}
