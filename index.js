@@ -1,5 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
+const Engineer = require("./lib/engineer");
 
 
 
@@ -84,3 +85,23 @@ const internQuestions = [
         name: "school"
     },
 ];
+
+let currentTeam = [];
+
+const askEnginfo = () => {
+    return inquirer
+    .prompt(engineerQuestions)
+    .then((engineerAnswers) => {
+        currentTeam.push(new Engineer(engineerAnswers));
+    return askNewTeamMember()
+});
+};
+
+const askIntinfo = () => {
+    return inquirer
+    .prompt(internQuestions)
+    .then((internAnswers) => {
+        currentTeam.push(new Intern(internAnswers));
+    return askNewTeamMember()
+});
+};
