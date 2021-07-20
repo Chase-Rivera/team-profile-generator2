@@ -1,6 +1,8 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const Engineer = require("./lib/engineer");
+const Intern = require("./lib/intern");
+const Manager = require("./lib/manager");
 
 
 
@@ -10,8 +12,6 @@ const newTeamMemeber = [
         message: "Would you like to add a new team member?",
         name: "teamMmeber",
         choices: ["Engineer", "Intern", "Done"]
-
-
     }
 ];
 
